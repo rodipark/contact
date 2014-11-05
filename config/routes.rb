@@ -1,5 +1,9 @@
 Contact::Application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
+  
+	get 'email/email_form' => 'email#email_form'
+	get 'email/email_send' => 'email#email_send'
+
+# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
